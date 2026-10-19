@@ -1,0 +1,37 @@
+{
+  "border": {
+    "width": {
+      "none": {"value": "0px", "description": "No border"},
+      "sm": {"value": "1px", "description": "Small border width"},
+      "base": {"value": "2px", "description": "Base border width"},
+      "md": {"value": "4px", "description": "Medium border width"},
+      "lg": {"value": "8px", "description": "Large border width"}
+    },
+    "radius": {
+      "none": {"value": "0px", "description": "No border radius"},
+      "sm": {"value": "2px", "description": "Small border radius"},
+      "base": {"value": "4px", "description": "Base border radius"},
+      "md": {"value": "6px", "description": "Medium border radius"},
+      "lg": {"value": "8px", "description": "Large border radius"},
+      "xl": {"value": "12px", "description": "Extra large border radius"},
+      "2xl": {"value": "16px", "description": "2X large border radius"},
+      "3xl": {"value": "24px", "description": "3X large border radius"},
+      "full": {"value": "9999px", "description": "Full border radius for circles"}
+    },
+    "style": {
+      "solid": {"value": "solid", "description": "Solid border style"},
+      "dashed": {"value": "dashed", "description": "Dashed border style"},
+      "dotted": {"value": "dotted", "description": "Dotted border style"},
+      "double": {"value": "double", "description": "Double border style"},
+      "none": {"value": "none", "description": "No border style"}
+    },
+    "color": {
+      "primary": {"value": "{color.primary.500}", "description": "Primary border color"},
+      "secondary": {"value": "{color.secondary.500}", "description": "Secondary border color"},
+      "error": {"value": "{color.error.500}", "description": "Error border color"},
+      "success": {"value": "{color.success.500}", "description": "Success border color"},
+      "warning": {"value": "{color.warning.500}", "description": "Warning border color"},
+      "neutral": {"value": "{color.neutral.300}", "description": "Neutral border color"}
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "name": "Input",
+  "description": "Componente reutilizable Input con variantes y estados para el design system de la fintech.",
+  "frames": [
+    {
+      "name": "Input Variants",
+      "nodes": [
+        {
+          "type": "COMPONENT_SET",
+          "name": "Input/Text",
+          "description": "Campo de entrada de texto genérico.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "#FFFFFF",
+                "textColor": "#000000",
+                "border": "1px solid #757575",
+                "borderRadius": "4px",
+                "padding": "12px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "placeholderColor": "#9E9E9E"
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "border": "1px solid #6200EE"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "border": "2px solid #6200EE",
+                "outline": "none"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "#F5F5F5",
+                "textColor": "#9E9E9E",
+                "border": "1px solid #E0E0E0",
+                "cursor": "not-allowed"
+              }
+            },
+            {
+              "name": "Error",
+              "properties": {
+                "border": "1px solid #B00020",
+                "errorMessage": {
+                  "text": "Este campo es obligatorio",
+                  "color": "#B00020",
+                  "fontSize": "12px"
+                }
+              }
+            },
+            {
+              "name": "Success",
+              "properties": {
+                "border": "1px solid #03DAC6",
+                "successIcon": {
+                  "color": "#03DAC6",
+                  "size": "16px"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "COMPONENT_SET",
+          "name": "Input/Password",
+          "description": "Campo de entrada para contraseñas.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "#FFFFFF",
+                "textColor": "#000000",
+                "border": "1px solid #757575",
+                "borderRadius": "4px",
+                "padding": "12px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "placeholderColor": "#9E9E9E",
+                "toggleVisibility": {
+                  "icon": "eye",
+                  "color": "#757575"
+                }
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "border": "1px solid #6200EE"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "border": "2px solid #6200EE",
+                "outline": "none"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "#F5F5F5",
+                "textColor": "#9E9E9E",
+                "border": "1px solid #E0E0E0",
+                "cursor": "not-allowed"
+              }
+            },
+            {
+              "name": "Error",
+              "properties": {
+                "border": "1px solid #B00020",
+                "errorMessage": {
+                  "text": "La contraseña no cumple con los requisitos",
+                  "color": "#B00020",
+                  "fontSize": "12px"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "COMPONENT_SET",
+          "name": "Input/Number",
+          "description": "Campo de entrada para números.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "#FFFFFF",
+                "textColor": "#000000",
+                "border": "1px solid #757575",
+                "borderRadius": "4px",
+                "padding": "12px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "placeholderColor": "#9E9E9E",
+                "incrementControls": {
+                  "icon": "chevron-up",
+                  "color": "#757575"
+                }
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "border": "1px solid #6200EE"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "border": "2px solid #6200EE",
+                "outline": "none"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "#F5F5F5",
+                "textColor": "#9E9E9E",
+                "border": "1px solid #E0E0E0",
+                "cursor": "not-allowed"
+              }
+            },
+            {
+              "name": "Error",
+              "properties": {
+                "border": "1px solid #B00020",
+                "errorMessage": {
+                  "text": "El valor debe ser un número",
+                  "color": "#B00020",
+                  "fontSize": "12px"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "COMPONENT_SET",
+          "name": "Input/Email",
+          "description": "Campo de entrada para correos electrónicos.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "#FFFFFF",
+                "textColor": "#000000",
+                "border": "1px solid #757575",
+                "borderRadius": "4px",
+                "padding": "12px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "placeholderColor": "#9E9E9E"
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "border": "1px solid #6200EE"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "border": "2px solid #6200EE",
+                "outline": "none"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "#F5F5F5",
+                "textColor": "#9E9E9E",
+                "border": "1px solid #E0E0E0",
+                "cursor": "not-allowed"
+              }
+            },
+            {
+              "name": "Error",
+              "properties": {
+                "border": "1px solid #B00020",
+                "errorMessage": {
+                  "text": "El correo electrónico no es válido",
+                  "color": "#B00020",
+                  "fontSize": "12px"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "COMPONENT_SET",
+          "name": "Input/Search",
+          "description": "Campo de entrada para búsquedas.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "#FFFFFF",
+                "textColor": "#000000",
+                "border": "1px solid #757575",
+                "borderRadius": "24px",
+                "padding": "12px 40px 12px 16px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "placeholderColor": "#9E9E9E",
+                "searchIcon": {
+                  "position": "right",
+                  "color": "#757575",
+                  "size": "16px"
+                }
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "border": "1px solid #6200EE"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "border": "2px solid #6200EE",
+                "outline": "none"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "#F5F5F5",
+                "textColor": "#9E9E9E",
+                "border": "1px solid #E0E0E0",
+                "cursor": "not-allowed"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "styles": {
+    "colors": {
+      "primary": "#6200EE",
+      "background": "#FFFFFF",
+      "error": "#B00020",
+      "success": "#03DAC6"
+    },
+    "text": {
+      "fontFamily": "Roboto",
+      "fontSize": "14px"
+    }
+  }
+}

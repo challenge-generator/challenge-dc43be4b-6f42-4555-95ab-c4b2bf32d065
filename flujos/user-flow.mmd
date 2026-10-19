@@ -1,0 +1,47 @@
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Pantalla de Login]
+    B -->|Ingresa credenciales| C[Validación de Credenciales]
+    C -->|Éxito| D[Dashboard Principal]
+    C -->|Error| E[Pantalla de Error]
+    E -->|Reintentar| B
+    D --> F[Seleccionar Acción]
+    F -->|Transferencia| G[Formulario de Transferencia]
+    F -->|Consulta de Saldo| H[Pantalla de Saldo]
+    G --> I[Validación de Datos]
+    I -->|Datos válidos| J[Confirmación de Transferencia]
+    I -->|Datos inválidos| K[Pantalla de Error]
+    K -->|Corregir| G
+    J -->|Confirmar| L[Procesando Transferencia]
+    L -->|Éxito| M[Transferencia Exitosa]
+    L -->|Fallo| N[Pantalla de Error]
+    M --> O[Dashboard Principal]
+    N -->|Reintentar| G
+    H --> O
+
+    %% Estados de Error
+    E -->|"Botón: Reintentar (estado: error)"| B
+    K -->|"Botón: Corregir (estado: error)"| G
+    N -->|"Botón: Reintentar (estado: error)"| G
+
+    %% Decisiones
+    F -->|"Botón: Transferencia (estado: default)"| G
+    F -->|"Botón: Consulta de Saldo (estado: default)"| H
+    J -->|"Botón: Confirmar (estado: loading)"| L
+
+    %% Accesibilidad
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#fcc,stroke:#333,stroke-width:2px
+    style K fill:#fcc,stroke:#333,stroke-width:2px
+    style N fill:#fcc,stroke:#333,stroke-width:2px
+    style J fill:#cfc,stroke:#333,stroke-width:2px
+    style L fill:#ffc,stroke:#333,stroke-width:2px
+
+    %% Leyenda
+    subgraph Leyenda
+        direction TB
+        L1["Pantalla Principal"] -->|Acción| L2["Pantalla Secundaria"]
+        L3["Estado de Éxito"] --> L4["Estado de Error"]
+        style L3 fill:#cfc,stroke:#333
+        style L4 fill:#fcc,stroke:#333
+    end"

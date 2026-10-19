@@ -1,0 +1,380 @@
+{
+  "color": {
+    "primary": {
+      "default": {
+        "value": "#1A73E8",
+        "type": "color",
+        "description": "Color principal usado en botones, enlaces y elementos interactivos."
+      },
+      "hover": {
+        "value": "#0D5BBA",
+        "type": "color",
+        "description": "Color al pasar el cursor sobre elementos interactivos."
+      },
+      "pressed": {
+        "value": "#0B4C9A",
+        "type": "color",
+        "description": "Color al hacer clic en elementos interactivos."
+      },
+      "disabled": {
+        "value": "#E8F0FE",
+        "type": "color",
+        "description": "Color para elementos interactivos deshabilitados."
+      }
+    },
+    "secondary": {
+      "default": {
+        "value": "#34A853",
+        "type": "color",
+        "description": "Color secundario para acciones complementarias."
+      },
+      "hover": {
+        "value": "#2D9249",
+        "type": "color",
+        "description": "Color secundario al pasar el cursor."
+      },
+      "pressed": {
+        "value": "#247A3D",
+        "type": "color",
+        "description": "Color secundario al hacer clic."
+      }
+    },
+    "error": {
+      "default": {
+        "value": "#D93025",
+        "type": "color",
+        "description": "Color para indicar errores o acciones destructivas."
+      },
+      "hover": {
+        "value": "#C1271F",
+        "type": "color",
+        "description": "Color de error al pasar el cursor."
+      }
+    },
+    "warning": {
+      "default": {
+        "value": "#F9AB00",
+        "type": "color",
+        "description": "Color para advertencias."
+      }
+    },
+    "success": {
+      "default": {
+        "value": "#34A853",
+        "type": "color",
+        "description": "Color para indicar éxito."
+      }
+    },
+    "neutral": {
+      "background": {
+        "default": {
+          "value": "#FFFFFF",
+          "type": "color",
+          "description": "Fondo predeterminado para la mayoría de las pantallas."
+        },
+        "subtle": {
+          "value": "#F8F9FA",
+          "type": "color",
+          "description": "Fondo sutil para distinguir secciones secundarias."
+        },
+        "elevated": {
+          "value": "#E8F0FE",
+          "type": "color",
+          "description": "Fondo elevado para tarjetas o paneles."
+        }
+      },
+      "text": {
+        "primary": {
+          "value": "#202124",
+          "type": "color",
+          "description": "Texto principal en la interfaz."
+        },
+        "secondary": {
+          "value": "#5F6368",
+          "type": "color",
+          "description": "Texto secundario o de soporte."
+        },
+        "disabled": {
+          "value": "#A5A9AC",
+          "type": "color",
+          "description": "Texto para elementos deshabilitados."
+        },
+        "hint": {
+          "value": "#8D9196",
+          "type": "color",
+          "description": "Texto de ayuda o placeholders."
+        }
+      },
+      "border": {
+        "default": {
+          "value": "#DADCE0",
+          "type": "color",
+          "description": "Borde para separar secciones o componentes."
+        },
+        "focus": {
+          "value": "#1A73E8",
+          "type": "color",
+          "description": "Borde para indicar el foco en elementos interactivos."
+        }
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "value": "'Roboto', sans-serif",
+        "type": "fontFamily",
+        "description": "Familia tipográfica principal utilizada en toda la interfaz."
+      }
+    },
+    "fontSize": {
+      "display": {
+        "large": {
+          "value": "57px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para títulos grandes."
+        },
+        "medium": {
+          "value": "45px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para títulos medianos."
+        },
+        "small": {
+          "value": "36px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para títulos pequeños."
+        }
+      },
+      "headline": {
+        "large": {
+          "value": "32px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para encabezados grandes."
+        },
+        "medium": {
+          "value": "28px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para encabezados medianos."
+        },
+        "small": {
+          "value": "24px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para encabezados pequeños."
+        }
+      },
+      "title": {
+        "large": {
+          "value": "22px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para títulos de sección grandes."
+        },
+        "medium": {
+          "value": "16px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para títulos de sección medianos."
+        },
+        "small": {
+          "value": "14px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para títulos de sección pequeños."
+        }
+      },
+      "body": {
+        "large": {
+          "value": "16px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para texto principal grande."
+        },
+        "medium": {
+          "value": "14px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para texto principal mediano."
+        },
+        "small": {
+          "value": "12px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para texto principal pequeño."
+        }
+      },
+      "label": {
+        "large": {
+          "value": "14px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para etiquetas grandes."
+        },
+        "medium": {
+          "value": "12px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para etiquetas medianas."
+        },
+        "small": {
+          "value": "11px",
+          "type": "fontSize",
+          "description": "Tamaño de fuente para etiquetas pequeñas."
+        }
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": 400,
+        "type": "fontWeight",
+        "description": "Peso regular para texto estándar."
+      },
+      "medium": {
+        "value": 500,
+        "type": "fontWeight",
+        "description": "Peso medio para énfasis moderado."
+      },
+      "bold": {
+        "value": 700,
+        "type": "fontWeight",
+        "description": "Peso negrita para títulos y énfasis fuerte."
+      }
+    },
+    "lineHeight": {
+      "display": {
+        "value": "1.25",
+        "type": "lineHeight",
+        "description": "Altura de línea para títulos grandes."
+      },
+      "headline": {
+        "value": "1.3",
+        "type": "lineHeight",
+        "description": "Altura de línea para encabezados."
+      },
+      "title": {
+        "value": "1.4",
+        "type": "lineHeight",
+        "description": "Altura de línea para títulos de sección."
+      },
+      "body": {
+        "value": "1.5",
+        "type": "lineHeight",
+        "description": "Altura de línea para texto principal."
+      },
+      "label": {
+        "value": "1.3",
+        "type": "lineHeight",
+        "description": "Altura de línea para etiquetas."
+      }
+    }
+  },
+  "spacing": {
+    "none": {
+      "value": "0px",
+      "type": "spacing",
+      "description": "Sin espaciado."
+    },
+    "xxs": {
+      "value": "4px",
+      "type": "spacing",
+      "description": "Espaciado extra pequeño."
+    },
+    "xs": {
+      "value": "8px",
+      "type": "spacing",
+      "description": "Espaciado pequeño."
+    },
+    "sm": {
+      "value": "12px",
+      "type": "spacing",
+      "description": "Espaciado mediano pequeño."
+    },
+    "md": {
+      "value": "16px",
+      "type": "spacing",
+      "description": "Espaciado mediano."
+    },
+    "lg": {
+      "value": "24px",
+      "type": "spacing",
+      "description": "Espaciado grande."
+    },
+    "xl": {
+      "value": "32px",
+      "type": "spacing",
+      "description": "Espaciado extra grande."
+    },
+    "xxl": {
+      "value": "48px",
+      "type": "spacing",
+      "description": "Espaciado doble extra grande."
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "value": "0px",
+      "type": "borderRadius",
+      "description": "Sin radio de borde."
+    },
+    "sm": {
+      "value": "4px",
+      "type": "borderRadius",
+      "description": "Radio de borde pequeño."
+    },
+    "md": {
+      "value": "8px",
+      "type": "borderRadius",
+      "description": "Radio de borde mediano."
+    },
+    "lg": {
+      "value": "16px",
+      "type": "borderRadius",
+      "description": "Radio de borde grande."
+    },
+    "circle": {
+      "value": "50%",
+      "type": "borderRadius",
+      "description": "Radio de borde circular para elementos como avatares."
+    }
+  },
+  "shadow": {
+    "none": {
+      "value": "none",
+      "type": "boxShadow",
+      "description": "Sin sombra."
+    },
+    "sm": {
+      "value": "0 1px 2px rgba(0,0,0,0.1)",
+      "type": "boxShadow",
+      "description": "Sombra pequeña para elementos sutiles."
+    },
+    "md": {
+      "value": "0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.1)",
+      "type": "boxShadow",
+      "description": "Sombra mediana para tarjetas o paneles."
+    },
+    "lg": {
+      "value": "0 4px 8px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1)",
+      "type": "boxShadow",
+      "description": "Sombra grande para modales o elementos elevados."
+    }
+  },
+  "opacity": {
+    "transparent": {
+      "value": "0",
+      "type": "opacity",
+      "description": "Totalmente transparente."
+    },
+    "subtle": {
+      "value": "0.3",
+      "type": "opacity",
+      "description": "Opacidad sutil para efectos de deshabilitado o placeholders."
+    },
+    "medium": {
+      "value": "0.6",
+      "type": "opacity",
+      "description": "Opacidad media para elementos secundarios."
+    },
+    "high": {
+      "value": "0.8",
+      "type": "opacity",
+      "description": "Opacidad alta para elementos interactivos."
+    },
+    "opaque": {
+      "value": "1",
+      "type": "opacity",
+      "description": "Totalmente opaco."
+    }
+  }
+}

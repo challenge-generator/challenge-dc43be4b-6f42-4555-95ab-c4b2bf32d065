@@ -1,0 +1,29 @@
+{
+  "elevation": {
+    "none": {"value": 0, "description": "No elevation"},
+    "sm": {"value": 2, "description": "Small elevation"},
+    "base": {"value": 4, "description": "Base elevation"},
+    "md": {"value": 8, "description": "Medium elevation"},
+    "lg": {"value": 16, "description": "Large elevation"},
+    "xl": {"value": 24, "description": "Extra large elevation"}
+  },
+  "transition": {
+    "duration": {
+      "75": {"value": "75ms", "description": "75ms transition duration"},
+      "100": {"value": "100ms", "description": "100ms transition duration"},
+      "150": {"value": "150ms", "description": "150ms transition duration"},
+      "200": {"value": "200ms", "description": "200ms transition duration"},
+      "300": {"value": "300ms", "description": "300ms transition duration"},
+      "500": {"value": "500ms", "description": "500ms transition duration"},
+      "700": {"value": "700ms", "description": "700ms transition duration"},
+      "1000": {"value": "1000ms", "description": "1000ms transition duration"}
+    },
+    "timing": {
+      "linear": {"value": "linear", "description": "Linear timing function"},
+      "ease": {"value": "ease", "description": "Ease timing function"},
+      "easeIn": {"value": "ease-in", "description": "Ease-in timing function"},
+      "easeOut": {"value": "ease-out", "description": "Ease-out timing function"},
+      "easeInOut": {"value": "ease-in-out", "description": "Ease-in-out timing function"}
+    }
+  }
+}

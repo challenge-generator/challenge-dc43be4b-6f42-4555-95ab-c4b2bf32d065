@@ -1,0 +1,116 @@
+# Component: Card
+# Description: A reusable card component with variants for different states and use cases.
+# Variants:
+# - Default
+# - Hover
+# - Focus
+# - Disabled
+# - Error
+# - Loading
+
+# Base Structure
+Rectangle (Main Container)
+  Width: 320
+  Height: Auto (Min: 180)
+  Corner Radius: 12 (from design-tokens.json)
+  Fill: #FFFFFF (from design-tokens.json)
+  Stroke: 1 solid #E0E0E0 (from design-tokens.json)
+  Padding: 16 (from design-tokens.json)
+
+# Header Section (Optional)
+Frame (Header)
+  Width: Fill container
+  Height: Auto
+  Layout: Horizontal
+  Padding: 0 0 12 0
+  
+  Text (Title)
+    Value: "Card Title"
+    Font: Inter SemiBold 16 (from design-tokens.json)
+    Fill: #1A1A1A (from design-tokens.json)
+    
+  Auto Layout Spacing: 8
+
+# Content Section
+Frame (Content)
+  Width: Fill container
+  Height: Auto
+  Layout: Vertical
+  Padding: 0
+  
+  Text (Body)
+    Value: "This is the card content. It can include multiple lines of text or other components."
+    Font: Inter Regular 14 (from design-tokens.json)
+    Fill: #333333 (from design-tokens.json)
+    Line Height: 20 (from design-tokens.json)
+    
+  Auto Layout Spacing: 12
+
+# Footer Section (Optional)
+Frame (Footer)
+  Width: Fill container
+  Height: Auto
+  Layout: Horizontal (Reverse)
+  Padding: 12 0 0 0
+  
+  Button (Primary Action)
+    Variant: Primary
+    Text: "Action"
+    Width: Auto
+    Height: 36
+    
+  Button (Secondary Action)
+    Variant: Secondary
+    Text: "Cancel"
+    Width: Auto
+    Height: 36
+    Visible: False (Toggle for variants)
+    
+  Auto Layout Spacing: 12
+
+# Variants
+Variant: Default
+  Description: Default state of the card.
+
+Variant: Hover
+  Description: Card when hovered.
+  Changes:
+    Stroke: 1 solid #9E9E9E (from design-tokens.json)
+    Shadow: 0 2 4 0 rgba(0, 0, 0, 0.1) (from design-tokens.json)
+
+Variant: Focus
+  Description: Card when focused (keyboard navigation).
+  Changes:
+    Stroke: 2 solid #2196F3 (from design-tokens.json)
+    Shadow: 0 0 0 2 #2196F3 (from design-tokens.json)
+
+Variant: Disabled
+  Description: Card when disabled.
+  Changes:
+    Fill: #F5F5F5 (from design-tokens.json)
+    Stroke: 1 solid #E0E0E0 (from design-tokens.json)
+    Text (Title) Fill: #9E9E9E (from design-tokens.json)
+    Text (Body) Fill: #9E9E9E (from design-tokens.json)
+    Button (Primary Action) Variant: Disabled
+
+Variant: Error
+  Description: Card when displaying an error state.
+  Changes:
+    Stroke: 1 solid #F44336 (from design-tokens.json)
+    Text (Body) Value: "Error: Something went wrong. Please try again."
+
+Variant: Loading
+  Description: Card when loading content.
+  Changes:
+    Text (Body) Visible: False
+    Loading Spinner (Circular)
+      Width: 24
+      Height: 24
+      Stroke: 3
+      Color: #2196F3 (from design-tokens.json)
+
+# Accessibility Notes
+# - Ensure sufficient color contrast for all text (minimum 4.5:1 for normal text).
+# - Use semantic HTML elements (e.g., <article> for cards) when implementing in code.
+# - Provide alternative text for any icons or images used within the card.
+# - Ensure focus states are clearly visible for keyboard navigation.

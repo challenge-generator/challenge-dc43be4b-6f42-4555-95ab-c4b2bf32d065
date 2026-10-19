@@ -1,0 +1,224 @@
+{
+  "name": "Button",
+  "description": "Componente reutilizable Button con variantes y estados para el design system de la fintech.",
+  "frames": [
+    {
+      "name": "Button Variants",
+      "nodes": [
+        {
+          "type": "COMPONENT_SET",
+          "name": "Button/Primary",
+          "description": "Botón de acción principal.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "#6200EE",
+                "textColor": "#FFFFFF",
+                "borderRadius": "4px",
+                "padding": "12px 24px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "fontWeight": "500"
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "backgroundColor": "#3700B3",
+                "textColor": "#FFFFFF"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "backgroundColor": "#6200EE",
+                "textColor": "#FFFFFF",
+                "border": "2px solid #03DAC6"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "#E0E0E0",
+                "textColor": "#9E9E9E",
+                "cursor": "not-allowed"
+              }
+            },
+            {
+              "name": "Error",
+              "properties": {
+                "backgroundColor": "#B00020",
+                "textColor": "#FFFFFF"
+              }
+            },
+            {
+              "name": "Loading",
+              "properties": {
+                "backgroundColor": "#6200EE",
+                "textColor": "#FFFFFF",
+                "content": "Loading...",
+                "spinner": {
+                  "color": "#FFFFFF",
+                  "size": "16px"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "COMPONENT_SET",
+          "name": "Button/Secondary",
+          "description": "Botón de acción secundaria.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "transparent",
+                "textColor": "#6200EE",
+                "border": "1px solid #6200EE",
+                "borderRadius": "4px",
+                "padding": "12px 24px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "fontWeight": "500"
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "backgroundColor": "#F3E5F5",
+                "textColor": "#6200EE"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "backgroundColor": "transparent",
+                "textColor": "#6200EE",
+                "border": "2px solid #03DAC6"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "transparent",
+                "textColor": "#9E9E9E",
+                "border": "1px solid #E0E0E0",
+                "cursor": "not-allowed"
+              }
+            },
+            {
+              "name": "Error",
+              "properties": {
+                "backgroundColor": "transparent",
+                "textColor": "#B00020",
+                "border": "1px solid #B00020"
+              }
+            }
+          ]
+        },
+        {
+          "type": "COMPONENT_SET",
+          "name": "Button/Tertiary",
+          "description": "Botón de acción terciaria.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "transparent",
+                "textColor": "#018786",
+                "border": "none",
+                "padding": "12px 24px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "fontWeight": "500"
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "backgroundColor": "#E0F2F1",
+                "textColor": "#018786"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "backgroundColor": "transparent",
+                "textColor": "#018786",
+                "border": "2px solid #03DAC6"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "transparent",
+                "textColor": "#9E9E9E",
+                "cursor": "not-allowed"
+              }
+            }
+          ]
+        },
+        {
+          "type": "COMPONENT_SET",
+          "name": "Button/Danger",
+          "description": "Botón de acción destructiva.",
+          "variants": [
+            {
+              "name": "Default",
+              "properties": {
+                "backgroundColor": "#B00020",
+                "textColor": "#FFFFFF",
+                "borderRadius": "4px",
+                "padding": "12px 24px",
+                "fontFamily": "Roboto",
+                "fontSize": "14px",
+                "fontWeight": "500"
+              }
+            },
+            {
+              "name": "Hover",
+              "properties": {
+                "backgroundColor": "#8C001A",
+                "textColor": "#FFFFFF"
+              }
+            },
+            {
+              "name": "Focus",
+              "properties": {
+                "backgroundColor": "#B00020",
+                "textColor": "#FFFFFF",
+                "border": "2px solid #03DAC6"
+              }
+            },
+            {
+              "name": "Disabled",
+              "properties": {
+                "backgroundColor": "#E0E0E0",
+                "textColor": "#9E9E9E",
+                "cursor": "not-allowed"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "styles": {
+    "colors": {
+      "primary": "#6200EE",
+      "primaryVariant": "#3700B3",
+      "secondary": "#03DAC6",
+      "background": "#FFFFFF",
+      "error": "#B00020"
+    },
+    "text": {
+      "fontFamily": "Roboto",
+      "fontSize": "14px",
+      "fontWeight": {
+        "medium": "500"
+      }
+    }
+  }
+}

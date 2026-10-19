@@ -1,0 +1,49 @@
+{
+  "typography": {
+    "fontFamilies": {
+      "primary": {"value": "'Inter', sans-serif", "description": "Primary font family for all UI text"},
+      "secondary": {"value": "'Roboto Mono', monospace", "description": "Secondary font for code blocks and technical content"},
+      "brand": {"value": "'Playfair Display', serif", "description": "Brand font for headings and marketing materials"}
+    },
+    "fontSizes": {
+      "xs": {"value": "12px", "description": "Extra small font size"},
+      "sm": {"value": "14px", "description": "Small font size"},
+      "base": {"value": "16px", "description": "Base font size, used for body text"},
+      "lg": {"value": "18px", "description": "Large font size"},
+      "xl": {"value": "20px", "description": "Extra large font size"},
+      "2xl": {"value": "24px", "description": "2X large font size"},
+      "3xl": {"value": "30px", "description": "3X large font size"},
+      "4xl": {"value": "36px", "description": "4X large font size"},
+      "5xl": {"value": "48px", "description": "5X large font size"},
+      "6xl": {"value": "60px", "description": "6X large font size"},
+      "7xl": {"value": "72px", "description": "7X large font size"}
+    },
+    "fontWeights": {
+      "thin": {"value": 100, "description": "Thin font weight"},
+      "extralight": {"value": 200, "description": "Extra light font weight"},
+      "light": {"value": 300, "description": "Light font weight"},
+      "normal": {"value": 400, "description": "Normal font weight"},
+      "medium": {"value": 500, "description": "Medium font weight"},
+      "semibold": {"value": 600, "description": "Semi-bold font weight"},
+      "bold": {"value": 700, "description": "Bold font weight"},
+      "extrabold": {"value": 800, "description": "Extra bold font weight"},
+      "black": {"value": 900, "description": "Black font weight"}
+    },
+    "lineHeights": {
+      "none": {"value": 1, "description": "No line height"},
+      "tight": {"value": 1.25, "description": "Tight line height"},
+      "snug": {"value": 1.375, "description": "Snug line height"},
+      "normal": {"value": 1.5, "description": "Normal line height"},
+      "relaxed": {"value": 1.625, "description": "Relaxed line height"},
+      "loose": {"value": 2, "description": "Loose line height"}
+    },
+    "letterSpacings": {
+      "tighter": {"value": "-0.05em", "description": "Tighter letter spacing"},
+      "tight": {"value": "-0.025em", "description": "Tight letter spacing"},
+      "normal": {"value": "0em", "description": "Normal letter spacing"},
+      "wide": {"value": "0.025em", "description": "Wide letter spacing"},
+      "wider": {"value": "0.05em", "description": "Wider letter spacing"},
+      "widest": {"value": "0.1em", "description": "Widest letter spacing"}
+    }
+  }
+}

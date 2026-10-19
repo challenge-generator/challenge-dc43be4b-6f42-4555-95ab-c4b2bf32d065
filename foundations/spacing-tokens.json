@@ -1,0 +1,33 @@
+{
+  "spacing": {
+    "px": {"value": "1px", "description": "1px spacing"},
+    "0": {"value": "0px", "description": "No spacing"},
+    "0.5": {"value": "2px", "description": "0.5 spacing unit (2px)"},
+    "1": {"value": "4px", "description": "1 spacing unit (4px)"},
+    "1.5": {"value": "6px", "description": "1.5 spacing units (6px)"},
+    "2": {"value": "8px", "description": "2 spacing units (8px)"},
+    "2.5": {"value": "10px", "description": "2.5 spacing units (10px)"},
+    "3": {"value": "12px", "description": "3 spacing units (12px)"},
+    "3.5": {"value": "14px", "description": "3.5 spacing units (14px)"},
+    "4": {"value": "16px", "description": "4 spacing units (16px)"},
+    "5": {"value": "20px", "description": "5 spacing units (20px)"},
+    "6": {"value": "24px", "description": "6 spacing units (24px)"},
+    "7": {"value": "28px", "description": "7 spacing units (28px)"},
+    "8": {"value": "32px", "description": "8 spacing units (32px)"},
+    "9": {"value": "36px", "description": "9 spacing units (36px)"},
+    "10": {"value": "40px", "description": "10 spacing units (40px)"},
+    "11": {"value": "44px", "description": "11 spacing units (44px)"},
+    "12": {"value": "48px", "description": "12 spacing units (48px)"},
+    "14": {"value": "56px", "description": "14 spacing units (56px)"},
+    "16": {"value": "64px", "description": "16 spacing units (64px)"},
+    "20": {"value": "80px", "description": "20 spacing units (80px)"},
+    "24": {"value": "96px", "description": "24 spacing units (96px)"},
+    "28": {"value": "112px", "description": "28 spacing units (112px)"},
+    "32": {"value": "128px", "description": "32 spacing units (128px)"},
+    "36": {"value": "144px", "description": "36 spacing units (144px)"},
+    "40": {"value": "160px", "description": "40 spacing units (160px)"},
+    "48": {"value": "192px", "description": "48 spacing units (192px)"},
+    "56": {"value": "224px", "description": "56 spacing units (224px)"},
+    "64": {"value": "256px", "description": "64 spacing units (256px)"}
+  }
+}

@@ -1,0 +1,251 @@
+# Template: Screen Template
+# Description: A reusable screen template that demonstrates the use of components and patterns.
+# This template can be adapted for various screens (e.g., login, dashboard, product detail).
+
+# Overlay (Base)
+Frame (Screen Overlay)
+  Width: 1440
+  Height: 900
+  Fill: #F5F5F5
+  Layout: Vertical
+  
+  # Header
+  Frame (Header)
+    Width: Fill container
+    Height: 64
+    Fill: #FFFFFF
+    Stroke: 1 solid #E0E0E0
+    Layout: Horizontal
+    Padding: 0 24
+    
+    Text (Logo)
+      Value: "FinTech"
+      Font: Inter Bold 20
+      Fill: #2196F3
+      
+    Spacer
+      Width: Fill container
+      
+    Frame (Navigation)
+      Width: Auto
+      Height: Fill container
+      Layout: Horizontal
+      Spacing: 24
+      
+      Button (Nav Item)
+        Variant: Text
+        Text: "Home"
+        
+      Button (Nav Item)
+        Variant: Text
+        Text: "Products"
+        
+      Button (Nav Item)
+        Variant: Text
+        Text: "Dashboard"
+        
+      Button (Nav Item)
+        Variant: Text
+        Text: "Profile"
+        
+    Button (User Action)
+      Variant: Primary
+      Text: "Sign In"
+      Width: Auto
+      Height: 40
+      
+  # Main Content
+  Frame (Main Content)
+    Width: Fill container
+    Height: Fill container
+    Layout: Horizontal
+    Padding: 24
+    
+    # Sidebar (Optional)
+    Frame (Sidebar)
+      Width: 256
+      Height: Fill container
+      Fill: #FFFFFF
+      Stroke: 1 solid #E0E0E0
+      Layout: Vertical
+      Padding: 16
+      Visible: True
+      
+      Text (Sidebar Title)
+        Value: "Menu"
+        Font: Inter SemiBold 16
+        Fill: #1A1A1A
+        
+      Frame (Sidebar Items)
+        Width: Fill container
+        Height: Auto
+        Layout: Vertical
+        Spacing: 8
+        Padding: 8 0 0 0
+        
+        Button (Sidebar Item)
+          Variant: Text
+          Text: "Overview"
+          Icon: dashboard
+          Width: Fill container
+          Height: 40
+          
+        Button (Sidebar Item)
+          Variant: Text
+          Text: "Transactions"
+          Icon: swap_horiz
+          Width: Fill container
+          Height: 40
+          
+        Button (Sidebar Item)
+          Variant: Text
+          Text: "Settings"
+          Icon: settings
+          Width: Fill container
+          Height: 40
+          
+    # Content Area
+    Frame (Content Area)
+      Width: Fill container
+      Height: Fill container
+      Layout: Vertical
+      Padding: 0 0 0 24
+      
+      # Breadcrumbs
+      Frame (Breadcrumbs)
+        Width: Fill container
+        Height: Auto
+        Layout: Horizontal
+        Spacing: 8
+        Padding: 0 0 16 0
+        
+        Text (Breadcrumb)
+          Value: "Home"
+          Font: Inter Regular 14
+          Fill: #666666
+          
+        Text (Breadcrumb Separator)
+          Value: ">"
+          Font: Inter Regular 14
+          Fill: #666666
+          
+        Text (Breadcrumb)
+          Value: "Dashboard"
+          Font: Inter Regular 14
+          Fill: #1A1A1A
+          
+      # Page Header
+      Frame (Page Header)
+        Width: Fill container
+        Height: Auto
+        Layout: Horizontal
+        Padding: 0 0 24 0
+        
+        Text (Page Title)
+          Value: "Dashboard"
+          Font: Inter SemiBold 24
+          Fill: #1A1A1A
+          
+        Spacer
+          Width: Fill container
+          
+        Button (Primary Action)
+          Variant: Primary
+          Text: "New Action"
+          Width: Auto
+          Height: 40
+          
+      # Demo Content: Product Card Grid
+      Frame (Product Grid)
+        Width: Fill container
+        Height: Auto
+        Layout: Grid
+        Spacing: 24
+        Padding: 0
+        Column Count: 3
+        
+        # Product Card 1
+        Instance (Product Card)
+          From: ../patterns/usage-examples.md (Product Card pattern)
+          
+        # Product Card 2
+        Instance (Product Card)
+          From: ../patterns/usage-examples.md (Product Card pattern)
+          
+        # Product Card 3
+        Instance (Product Card)
+          From: ../patterns/usage-examples.md (Product Card pattern)
+          
+        # Product Card 4
+        Instance (Product Card)
+          From: ../patterns/usage-examples.md (Product Card pattern)
+          
+      # Demo Content: Form Card
+      Instance (Form Card)
+        From: ../patterns/usage-examples.md (Formulario con Validación pattern)
+        Width: 400
+        
+  # Footer
+  Frame (Footer)
+    Width: Fill container
+    Height: 64
+    Fill: #FFFFFF
+    Stroke: 1 solid #E0E0E0
+    Layout: Horizontal
+    Padding: 0 24
+    
+    Text (Footer Text)
+      Value: "© 2025 FinTech. All rights reserved."
+      Font: Inter Regular 14
+      Fill: #666666
+      
+    Spacer
+      Width: Fill container
+      
+    Frame (Footer Links)
+      Width: Auto
+      Height: Fill container
+      Layout: Horizontal
+      Spacing: 24
+      
+      Text (Link)
+        Value: "Privacy Policy"
+        Font: Inter Regular 14
+        Fill: #2196F3
+        
+      Text (Link)
+        Value: "Terms of Service"
+        Font: Inter Regular 14
+        Fill: #2196F3
+        
+      Text (Link)
+        Value: "Contact Us"
+        Font: Inter Regular 14
+        Fill: #2196F3
+
+# Variants
+Variant: Desktop
+  Description: Template for desktop screens (width >= 1024px).
+
+Variant: Tablet
+  Description: Template for tablet screens (768px <= width < 1024px).
+  Changes:
+    Frame (Main Content) Layout: Vertical
+    Frame (Sidebar) Width: Fill container
+    Frame (Content Area) Padding: 0
+
+Variant: Mobile
+  Description: Template for mobile screens (width < 768px).
+  Changes:
+    Frame (Main Content) Layout: Vertical
+    Frame (Sidebar) Visible: False
+    Frame (Header) Layout: Vertical
+    Frame (Navigation) Visible: False
+    Button (User Action) Visible: True (moved to top of Header)
+
+# Accessibility Notes
+# - Ensure the template is fully responsive and adapts to different screen sizes.
+# - Validate color contrast for all text and interactive elements.
+# - Provide keyboard navigation support for all interactive elements.
+# - Use semantic HTML elements when implementing in code (e.g., <header>, <main>, <footer>).
+# - Ensure that focus states are clearly visible for all interactive elements."
